@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İLETİŞİM</title>
+    <link rel="stylesheet" href="iletişim.css">
+    
+</head>
+<body>
+    <div id="ilksayfa1">
+        <div id="kisimlar">
+          <ul>
+           <li><a href="anasayfa.html">ANASAYFA</a></li>
+           <li><a href="hakkımda.html">HAKKIMDA</a></li>
+           <li><a href="egitim-bilgilerim.html">EĞİTİM BİLGİLERİM</a></li>
+           <li><a href="yaşadığım-şehir.html">YAŞADIĞIM ŞEHİR</a></li>
+           <li><a href="mirasımız.html">MİRASIMIZ</a></li>
+           <li><a href="ilgi-alanlarım.html">İLGİ ALANLARIM</a></li>
+           <li><a href="iletişim.html">İLETİŞİM</a></li>
+           <li><a href="login.html">LOG İN</a></li>
+          </ul>
+        </div>
+    </div><br>
+    <div class="iletişimsayfası">
+        <form id="formbilgileri" class="formiletişim">
+            <h2 style="color: brown;">BİZİMLE İLETİŞİME GEÇİN</h2>
+            <div>
+                <input style="height: 40px;"  type="text" id="isim" name="name" placeholder="İsminiz" required>
+                <span id="isimhatası" class="hata"></span>
+            </div>
+            <div>
+                <input style="height: 40px;" type="email" id="email" name="email" placeholder="E-mailiniz" required>
+                <span id="emailhatası" class="hata"></span>
+            </div>
+            <div>
+                <input  style="height: 40px;"type="text" id="numara" name="phone" placeholder="Telefon numaranız" required>
+                <span id="telefonhatası" class="telefon"></span>
+            </div>
+            <div>
+                <textarea id="mesaj" name="message" rows="6" placeholder="Size nasıl yardımcı olabilirim?"></textarea>
+                <span id="mesajhatası" class="hata"></span>
+            </div>
+            <div>
+                <button type="submit" style="color: blue; padding: 10px;">GÖNDER</button>
+                <button type="button" id="butonlaritemizle" style="color: red; padding: 10px;">TEMİZLE</button>
+                <button type="submit" style="color: blue; padding: 10px; margin-left: 10px;">GÖNDER</button>
+            </div>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>

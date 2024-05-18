@@ -1,0 +1,81 @@
+body{
+   background-color:khaki; 
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color:darksalmon;
+}
+#ilksayfa1 #kisimlar{
+    background-color:midnightblue;
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+    padding:  0 10%; 
+}
+#ilksayfa ul{
+    float:right;
+    margin-right: 20px;
+    
+}
+#ilksayfa1 ul{
+    float:right;
+    margin-right: 20px;
+    
+}
+
+#kisimlar ul li{
+
+display: inline-block;
+margin-top: 20px;
+margin-right: 12px;
+margin-left: 12px;
+margin-bottom: 20px;
+user-select: none;
+}
+#kisimlar ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    padding: 4px;
+    border-style:groove;
+    border-color:white;
+}
+
+#kisimlar ul li a:hover {
+    text-decoration: underline;
+}
+input[type="text"], button {
+    padding: 10px;
+    margin: 5px;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.book {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.book img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.book h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.book p {
+    margin: 0;
+}

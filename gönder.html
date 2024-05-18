@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Gönderildi</title>
+</head>
+<body>
+    <h1>Form Gönderildi</h1>
+    <p><strong>İsim:</strong> <span id="displayName"></span></p>
+    <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+    <p><strong>Telefon:</strong> <span id="displayPhone"></span></p>
+    <p><strong>Mesaj:</strong> <span id="displayMessage"></span></p>
+
+    <script>
+        // URL parametrelerini alma ve gösterme
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            document.getElementById('displayName').textContent = urlParams.get('name');
+            document.getElementById('displayEmail').textContent = urlParams.get('email');
+            document.getElementById('displayPhone').textContent = urlParams.get('phone');
+            document.getElementById('displayMessage').textContent = urlParams.get('message');
+        });
+    </script>
+</body>
+</html>
